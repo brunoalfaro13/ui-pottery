@@ -28,35 +28,35 @@
           <h3>Consultas e inscripciones</h3>
           <form id="contact-form">
             <div>
-              <label for="name">Nombre:</label>
+              <label class="form-label" for="name">Nombre:</label>
               <input id="name" name="name" type="text" placeholder="Nombre" />
             </div>
             <div>
-              <label for="email">Email:</label>
+              <label class="form-label" for="email">Email:</label>
               <input id="email" name="email" type="email" placeholder="Correo electrónico" />
             </div>
             <div>
-              <label for="message">Mensaje:</label>
+              <label class="form-label" for="message">Mensaje:</label>
               <textarea id="message" name="message" rows="3" placeholder="Tu consulta"></textarea>
             </div>
             <fieldset>
               <legend>¿Ya asististe a uno de nuestros cursos?</legend>
-              <div>
-                <input type="radio" id="attended-yes" name="attended" value="yes" required />
+              <div class = "form-field">
+                <input class="radio" type="radio" id="attended-yes" name="attended" value="yes" required />
                 <label for="attended-yes">Sí</label>
               </div>
-              <div>
-                <input type="radio" id="attended-no" name="attended" value="no" />
+              <div class="form-field">
+                <input class="radio" type="radio" id="attended-no" name="attended" value="no" />
                 <label for="attended-no">No, sería mi primera vez</label>
               </div>
             </fieldset>
-            <div>
+            <div class = "switch">
               <label for="notifications">¿Te gustaría recibir notificaciones?</label>
               <div>
-                <input type="checkbox" id="notifications" name="notifications" role="switch" switch />
+                <input class="form-control" type="checkbox" id="notifications" name="notifications" role="switch" switch />
               </div>
             </div>
-            <button type="submit">Enviar consulta</button>
+            <button class="theme-primary" class="btn-solid" type="submit">Enviar consulta</button>
             <p id="status" role="status"></p>
           </form>
         </section>
